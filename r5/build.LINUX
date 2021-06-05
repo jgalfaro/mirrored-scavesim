@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="R4-java3D">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+
+	<!-- Parameter to exec-->
+	<property name="nodes" value="300"/>
+	<property name="agents" value="3"/>
+	<property name="x" value="600"/>
+	<property name="y" value="600"/>
+	<property name="type" value="0"/>
+	<property name="tokens" value="5"/>
+	<property name="BH" value="1"/>
+	<property name="labels" value="0"/>
+        <property name="testA2" value="0"/>
+
+    <path id="R4-java3D.classpath">
+        <pathelement location="."/>
+        <pathelement location="j3d/lib/ext/j3dcore.jar"/>
+        <pathelement location="j3d/lib/ext/j3dutils.jar"/>
+        <pathelement location="j3d/lib/ext/vecmath.jar"/>
+    </path>
+    <target name="init">
+        <copy includeemptydirs="false" todir=".">
+            <fileset dir=".">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete>
+            <fileset dir="." includes="**/*.class"/>
+        </delete>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="." source="${source}" target="${target}">
+            <src path="."/>
+            <classpath refid="R4-java3D.classpath"/>
+        </javac>
+    </target>
+    <target name="run">
+        <java classname="src.Main" failonerror="true" fork="yes">
+            <classpath refid="R4-java3D.classpath"/>
+        	<arg value="${nodes}"/>
+        	<arg value="${agents}"/>
+        	<arg value="${x}"/>
+        	<arg value="${y}"/>
+        	<arg value="${type}"/>
+        	<arg value="${tokens}"/>
+        	<arg value="${BH}"/>
+        	<arg value="${labels}"/>
+        	<arg value="${testA2}"/>
+        </java>
+    </target>
+</project>

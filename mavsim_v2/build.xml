@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="R4-java3D">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+	
+	<!-- Parameter to exec-->
+	<property name="agents" value="2"/>   
+	<property name="x" value="100"/>
+	<property name="y" value="100"/>
+	<property name="edges" value="0"/>
+	<property name="vertices" value="0"/>
+	<property name="number" value="0"/>
+	<property name="outfile" value="0"/>
+	<property name="nodeSize" value="0.003"/>
+	<property name="agentSize" value="0.005"/>
+	<property name="minLandmarks" value="2"/>
+	<property name="path" value="2"/>
+
+	
+	<property name="input" value="20"/>
+	<property name="output" value="20"/>
+
+	
+    <path id="R4-java3D.classpath">
+        <pathelement location="."/>
+        <pathelement location="j3d-linux/lib/ext/j3dcore.jar"/>
+        <pathelement location="j3d-linux/lib/ext/j3dutils.jar"/>
+        <pathelement location="j3d-linux/lib/ext/vecmath.jar"/>
+    </path>
+
+    <target name="init">
+        <copy includeemptydirs="false" todir=".">
+            <fileset dir=".">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+
+	<target name="grid">    
+		<exec executable="netgenerate" dir ="./scenarios/OSM" failonerror="true">
+		<arg value="--grid"/>
+		<arg value="--grid.number=${number}"/>
+		<arg value="--output-file=${outfile}"/>
+		</exec>
+
+		<echo message="Grid ${number} x ${number} done!"/>
+    </target>
+
+ 	<target name="osm">    
+
+		<!--OSM TO .NET -->
+		<exec executable="netconvert" dir ="./scenarios/OSM" failonerror="true">
+		<arg value="--osm-files=${input}"/>
+		<arg value="-o=${output}"/>
+		<arg value="--roundabouts.guess"/>
+		<arg value="--ramps.guess"/>
+		<arg value="--tls.guess-signals"/>
+		<arg value="--tls.discard-simple"/>
+		<arg value="--tls.join"/>
+		</exec>
+
+    </target>
+
+	 	<target name="poly">    
+
+		<!--GET POLI FROM .OSM AND .NET -->
+		<exec executable="polyconvert" dir ="./scenarios/OSM" failonerror="true">
+		<arg value="--net-file=${inputNet}"/>
+		<arg value="--osm-files=${inputOSM}"/>
+		<arg value="-o=${output}"/>
+		<arg value="--osm.keep-full-type"/>
+		</exec>
+
+    </target>
+
+
+	<target name="python">    
+
+		<exec executable="python"  dir="./python" failonerror="true">
+		<arg value="from_osm_to_graph.py"/>
+        <arg value="./scenarios/OSM/${inputNet}"/>
+		<arg value="./scenarios/OSM/${inputPoly}"/>
+		</exec>
+
+    </target>
+
+
+    <target name="clean">
+        <delete>
+            <fileset dir="." includes="**/*.class"/>
+        </delete>
+    </target>
+
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac includeantruntime="false" debug="true" debuglevel="${debuglevel}" destdir="." source="${source}" target="${target}">
+            <src path="."/>
+            <classpath refid="R4-java3D.classpath"/>
+        </javac>
+    </target>
+
+    <target name="run">
+        <java classname="src.Main" failonerror="true" fork="yes">
+            <classpath refid="R4-java3D.classpath"/>
+        	<arg value="${agents}"/>
+			<arg value="${edges}"/>
+			<arg value="${vertices}"/>  
+			<arg value="${outfile}"/> 
+			<arg value="${nodeSize}"/> 	 
+			<arg value="${agentSize}"/> 
+			<arg value="${minLandmarks}"/>
+			<arg value="${path}"/>  	       	
+        </java>
+    </target>
+</project>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="R6">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+
+	<!-- Parameter to exec-->
+	<property name="nodes" value="60"/>
+	<property name="agents" value="3"/>
+	<property name="x" value="500"/>
+	<property name="y" value="500"/>
+	<property name="type" value="1"/>
+        <property name="tokens" value="7"/>
+        <property name="BH" value="1"/>
+        <property name="labels" value="1"/>
+        <property name="testA2" value="0"/>
+
+
+    <path id="R6.classpath">
+        <pathelement location="."/>
+        <pathelement location="j3d/lib/ext/j3dcore.jar"/>
+        <pathelement location="j3d/lib/ext/j3dutils.jar"/>
+        <pathelement location="j3d/lib/ext/vecmath.jar"/>
+        <pathelement location="miglayout/miglayout-4.0-swing.jar"/>
+    </path>
+
+    <target name="init">
+        <copy includeemptydirs="false" todir=".">
+            <fileset dir=".">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete>
+            <fileset dir="." includes="**/*.class"/>
+        </delete>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac includeantruntime="false" debug="true" debuglevel="${debuglevel}" destdir="." source="${source}" target="${target}">
+            <src path="."/>
+            <classpath refid="R6.classpath"/>
+        </javac>
+    </target>
+    <target name="run">
+      <exec executable="java">
+        <arg value="-d32"/> <!-- force the 32-bit JVM version -->
+        <arg value="src.Main"/> <!-- Main Class -->
+        <arg value="${nodes}"/>
+        <arg value="${agents}"/>
+        <arg value="${x}"/>
+        <arg value="${y}"/>
+        <arg value="${type}"/>
+        <arg value="${tokens}"/>
+        <arg value="${BH}"/>
+        <arg value="${labels}"/>
+        <arg value="${testA2}"/>
+        <env key="CLASSPATH" value=".:./miglayout/miglayout-4.0-swing.jar:./j3d-macos/j3dcore.jar:./j3d-macos/j3dutils.jar:./j3d-macos/vecmath.jar:./j3d-macos/jogl/lib/gluegen-rt.jar:./j3d-macos/jogl/lib/jogl.jar"/>
+        <env key="DYLD_LIBRARY_PATH" value="./j3d-macos/jogl/lib/"/>
+      </exec>
+    </target>
+</project>
+
