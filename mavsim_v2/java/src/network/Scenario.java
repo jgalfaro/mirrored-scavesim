@@ -347,7 +347,7 @@ public class Scenario {
 		// 2. HamiltonianPath
 		// 3. Dijkstra
 		//BFS(0,1); //BFS PATH
-		//findHamiltonianPath(nodeList.size(), 0); //SCENARIO NAO ESTA ENCONTRANDO O CAMINHO HAMILTONIANO
+		//findHamiltonianPath(nodeList.size(), 0); 
 		//dijkstra(0);
 		
 		
