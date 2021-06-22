@@ -43,7 +43,6 @@ Some videocaptures about the different releases follow:
 </p>
 
 
-Further details available at the [Main Website of MAVSIM](http://www-public.imtbs-tsp.eu/~garcia_a/web/prototypes/mavsim/)
 
 # Building & executing the simulator
 
@@ -69,3 +68,6 @@ ant run -Dagents=1 -Dedges="edges_grid25.txt" -Dvertices="vertices_grid25.txt" -
 - Green node: landmark (the drones may or not cross these green landmarks).
 
 
+# Further details 
+
+[Website](http://www-public.imtbs-tsp.eu/~garcia_a/web/prototypes/mavsim/)
