@@ -31,9 +31,6 @@ simulator</a>. Our simulations explore the complexity and impact of
 each of those communication models in terms of [swarm
 intelligence](https://en.wikipedia.org/wiki/Swarm_intelligence).
 
-[MAVSIM v1](https://github.com/jgalfaro/mirrored-scavesim/tree/master/mavsim_v1)
-
 [MAVSIM v2](https://github.com/jgalfaro/mirrored-scavesim/tree/master/mavsim_v2)
-
 
 Further details available at the [Main Website of MAVSIM](http://www-public.imtbs-tsp.eu/~garcia_a/web/prototypes/mavsim/)
