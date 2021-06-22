@@ -1,6 +1,5 @@
 # Error Tolerant Path Planning for Swarms of Micro Aerial Vehicles with Quality Amplification [github repository]
 
-===
 
 ### Michel Barbeau, Carleton University, School of Computer Science, Canada.
 
