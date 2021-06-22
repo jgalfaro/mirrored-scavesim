@@ -12,6 +12,3 @@ Some videocaptures about the different releases follow:
 
 [r7-test](http://youtu.be/B-PdgEmdmxQ)
 
-Further details available at the [Main Website](http://www-public.imtbs-tsp.eu/~garcia_a/web/prototypes/mavsim/)
-
-
