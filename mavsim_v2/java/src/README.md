@@ -70,4 +70,4 @@ ant run -Dagents=1 -Dedges="edges_grid25.txt" -Dvertices="vertices_grid25.txt" -
 
 # Further details 
 
-[Website](http://www-public.imtbs-tsp.eu/~garcia_a/web/prototypes/mavsim/)
+[MAVSIM Website](http://www-public.imtbs-tsp.eu/~garcia_a/web/prototypes/mavsim/)
