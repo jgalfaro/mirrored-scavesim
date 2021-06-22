@@ -34,9 +34,11 @@ intelligence](https://en.wikipedia.org/wiki/Swarm_intelligence).
 Some videocaptures about the different releases follow:
 
 <p align="center">
+[![Watch the video](https://img.youtube.com/vi/_R9daWaxWM0/maxresdefault.jpg)](https://youtu.be/_R9daWaxWM0)[![Watch the video](https://img.youtube.com/vi/ePn1VMsyFHw/maxresdefault.jpg)](https://youtu.be/ePn1VMsyFHw)
+</p>
+
                 <iframe src="http://www.youtube.com/embed/_R9daWaxWM0?autoplay=0&loop=1&playlist=_R9daWaxWM0" allowfullscreen="" frameborder="0" height="205" width="300"></iframe>
                 <iframe src="http://www.youtube.com/embed/ePn1VMsyFHw?autoplay=0&loop=1&playlist=ePn1VMsyFHw" allowfullscreen="" frameborder="0" height="205" width="300"></iframe>
-</p>
 <p align="center">
                 <iframe src="http://www.youtube.com/embed/CuY3zvl-bKY?autoplay=0&loop=1&playlist=CuY3zvl-bKY" allowfullscreen="" frameborder="0" height="205" width="300"></iframe>
                 <iframe src="http://www.youtube.com/embed/_F7AbmR-QDM?autoplay=0&loop=1&playlist=_F7AbmR-QDM" allowfullscreen="" frameborder="0" height="205" width="300"></iframe>
