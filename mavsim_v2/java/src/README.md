@@ -1,5 +1,4 @@
-# Error Tolerant Path Planning for Swarms of Micro Aerial Vehicles with Quality Amplification [github repository]
-===
+# MAVSIM v2 JAVA Simulator
 
 Java Simulator to explore planning algorithms for [Micro Aerial
 Vehicles (MAVs)](https://en.wikipedia.org/wiki/Micro_air_vehicle) and
