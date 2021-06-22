@@ -75,6 +75,11 @@ Some videocaptures about the different releases follow:
 [![Watch the video](https://img.youtube.com/vi/_R9daWaxWM0/0.jpg)](https://youtu.be/_R9daWaxWM0)
 
 
+# Source code
+
+[java/src](https://github.com/jgalfaro/mirrored-scavesim/tree/main/mavsim_v2/java/src)
+
+
 # Building & executing the simulator
 
 ```bash
