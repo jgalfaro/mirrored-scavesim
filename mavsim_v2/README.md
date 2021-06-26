@@ -85,5 +85,24 @@ ant run -Dagents=1 -Dedges="edges_grid25.txt" -Dvertices="vertices_grid25.txt" -
 
 [MAVSIM Website](http://www-public.imtbs-tsp.eu/~garcia_a/web/prototypes/mavsim/)
 
+## Reference
+
+If using this code for research purposes, please cite:
+
+[1] M. Barbeau, J. Garcia-Alfaro, E. Kranakis, F. Santos, "Quality Amplification of Error Prone Navigation for Swarms of Micro Aerial Vehicles," IEEE GLOBECOM 2019 Workshop on Computing-Centric Drone Networks 2019 (CCDN 2019), December 2019. 
+
+```
+@inproceedings{barbeau2019quality,
+  title={Quality Amplification of Error Prone Navigation for Swarms of Micro Aerial Vehicles},
+  author={Barbeau, Michel and Garcia-Alfaro, Joaquin and Kranakis, Evangelos and Santos, Fillipe},
+  booktitle={2019 IEEE Globecom Workshops (GC Wkshps)},
+  pages={1--6},
+  year={2019},
+  organization={IEEE},
+  doi={10.1109/GCWkshps45667.2019.9024394},
+  url={https://doi.org/10.1109/GCWkshps45667.2019.9024394},
+}
+```
+
 
 
