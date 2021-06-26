@@ -94,17 +94,17 @@ If using this code for research purposes, please cite:
 [2] M. Barbeau, J. Garcia-Alfaro, E. Kranakis, F. Santos, "Quality Amplification of Error Prone Navigation for Swarms of Micro Aerial Vehicles," IEEE GLOBECOM 2019 Workshop on Computing-Centric Drone Networks 2019 (CCDN 2019), December 2019. 
 
 ```
-@techreport{barbeau2019qualityArxiv,
+@techreport{Arxiv1906.09505,
   title={Error Tolerant Path Planning for Swarms of Micro Aerial Vehicles with Quality Amplification},
   author={Barbeau, Michel and Garcia-Alfaro, Joaquin and Kranakis, Evangelos and Santos, Fillipe},
   year={June 2021},
-  url={https://arxiv.org/pdf/1906.09505},
+  url={https://arxiv.org/abs/1906.09505},
   eprint={1906.09505},
   archivePrefix={arXiv},
   primaryClass={cs.RO}
 }
 
-@inproceedings{barbeau2019quality,
+@inproceedings{GC19WkshpBarbeauGarciaKranakisSantos,
   title={Quality Amplification of Error Prone Navigation for Swarms of Micro Aerial Vehicles},
   author={Barbeau, Michel and Garcia-Alfaro, Joaquin and Kranakis, Evangelos and Santos, Fillipe},
   booktitle={2019 IEEE Globecom Workshops (GC Wkshps)},
