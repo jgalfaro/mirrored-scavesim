@@ -73,14 +73,6 @@ ant run -Dagents=1 -Dedges="edges_grid10.txt" -Dvertices="vertices_grid10.txt" -
 ant run -Dagents=1 -Dedges="edges_grid25.txt" -Dvertices="vertices_grid25.txt" -Doutfile="teste.txt" -DagentSize=0.01 -DnodeSize=0.003 -DminLandmarks=20 -Dpath="path-grid25.txt"
 ```
 
-# Node colors
-
-- Blue node: starting node.
-- Red node: arrival node.
-- Yellow node: landmark to cross (the drones must cross the yellow landmark -DminLandmarks).
-- Green node: landmark (the drones may or not cross these green landmarks).
-
-
 # Further details
 
 [MAVSIM Website](http://www-public.imtbs-tsp.eu/~garcia_a/web/prototypes/mavsim/)
