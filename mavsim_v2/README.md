@@ -45,11 +45,11 @@ intelligence](https://en.wikipedia.org/wiki/Swarm_intelligence).
 
 Some videocaptures about the different releases follow:
 
+[![Watch the video](https://img.youtube.com/vi/_Ea2ci3XnXI/0.jpg)](https://youtu.be/_Ea2ci3XnXI)
 [![Watch the video](https://img.youtube.com/vi/CuY3zvl-bKY/0.jpg)](https://youtu.be/CuY3zvl-bKY)
-[![Watch the video](https://img.youtube.com/vi/_F7AbmR-QDM/0.jpg)](https://youtu.be/_F7AbmR-QDM)
 
+[![Watch the video](https://img.youtube.com/vi/_F7AbmR-QDM/0.jpg)](https://youtu.be/_F7AbmR-QDM)
 [![Watch the video](https://img.youtube.com/vi/ePn1VMsyFHw/0.jpg)](https://youtu.be/ePn1VMsyFHw)
-[![Watch the video](https://img.youtube.com/vi/_R9daWaxWM0/0.jpg)](https://youtu.be/_R9daWaxWM0)
 
 
 # Source code
