@@ -81,7 +81,7 @@ ant run -Dagents=1 -Dedges="edges_grid25.txt" -Dvertices="vertices_grid25.txt" -
 
 If using this code for research purposes, please cite:
 
-[1] M. Barbeau, J. Garcia-Alfaro, E. Kranakis, F. Santos. "Error Tolerant Path Planning for Swarms of Micro Aerial Vehicles with Quality Amplification", June 2021. 
+[1] M. Barbeau, J. Garcia-Alfaro, E. Kranakis, F. Santos. "GPS-Free, Error Tolerant Path Planning for Swarms of Micro Aerial Vehicles with Quality Amplification", Sensors, 21(14), 4731, 2021. 
 
 [2] M. Barbeau, J. Garcia-Alfaro, E. Kranakis, F. Santos, "Quality Amplification of Error Prone Navigation for Swarms of Micro Aerial Vehicles," IEEE GLOBECOM 2019 Workshop on Computing-Centric Drone Networks 2019 (CCDN 2019), December 2019. 
 
