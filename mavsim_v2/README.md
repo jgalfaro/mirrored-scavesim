@@ -88,7 +88,7 @@ If using this code for research purposes, please cite:
 ```
 @article{Barbeau2021,
   author = {Barbeau, Michel and Garcia-Alfaro, Joaquin and Kranakis, Evangelos and Santos, Fillipe},
-  title = {GPS-Free, Error Tolerant Path Planning for Swarms of Micro Aerial Vehicles with Quality Amplification },
+  title = {GPS-Free, Error Tolerant Path Planning for Swarms of Micro Aerial Vehicles with Quality Amplification},
   journal = {Sensors},
   volume = {21},
   year = {2021},
